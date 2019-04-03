@@ -28,3 +28,10 @@
 .mat-table, .mat-paginator {
     background: #ffc;
 }
+
+table {
+  width: 100%;
+}
+
+.mat-cell {    text-align: left;    }
+

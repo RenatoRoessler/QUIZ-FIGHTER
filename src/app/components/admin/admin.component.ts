@@ -11,15 +11,15 @@ import { Pergunta } from '../../models';
 import { PerguntaFormDialogComponent } from './dialogs';
 
 
-
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
+
 export class AdminComponent implements OnInit {
 
-  colunas: ['pergunta', 'opcoes', 'correta', 'acao'];
+  colunas: string[] = ['pergunta', 'opcoes', 'correta', 'acao'];
   dataSource: MatTableDataSource<Pergunta>;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -40,7 +40,6 @@ export class AdminComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
       console.log('dataSource', this.dataSource);
     });
-
   }
 
   validarAutenticacao() {
@@ -64,5 +63,7 @@ export class AdminComponent implements OnInit {
         }
       });
   }
+
+
 
 }
