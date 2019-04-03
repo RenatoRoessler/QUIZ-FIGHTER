@@ -18,7 +18,7 @@
 
       <ng-container matColumnDef="correta">
         <th mat-header-cell *matHeaderCellDef>Correta</th>
-        <td mat-cell *matCellDef="let pergunta">{{ pergunta.correta}}</td>
+        <td mat-cell *matCellDef="let pergunta">{{ pergunta.opcoes[pergunta.correta] }}</td>
       </ng-container>
 
       <ng-container matColumnDef="acao">

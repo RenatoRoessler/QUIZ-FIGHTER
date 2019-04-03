@@ -23,6 +23,8 @@ export class PerguntaFormDialogComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private dialoRef: MatDialogRef<PerguntaFormDialogComponent>,
+
+    // para receber os dados como parametro
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit() {
@@ -63,7 +65,7 @@ export class PerguntaFormDialogComponent implements OnInit {
       ];
       this.pergunta = {
         questao: dados.questao,
-        opcoes: opcoes,
+        opcoes,
         correta: dados.correta
       };
       this.dialoRef.close({

@@ -13,7 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent,
          PreJogoComponent,
          AdminComponent,
-         PerguntaFormDialogComponent } from './components';
+         PerguntaFormDialogComponent,
+         ConfirmarRemoverDialogComponent,
+         ConfirmarRestauracaoDialogComponent } from './components';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatInputModule,
@@ -38,7 +40,9 @@ import {
     LoginComponent,
     PreJogoComponent,
     AdminComponent,
-    PerguntaFormDialogComponent
+    PerguntaFormDialogComponent,
+    ConfirmarRemoverDialogComponent,
+    ConfirmarRestauracaoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,9 @@ import {
   ],
   providers: [],
   entryComponents: [
-    PerguntaFormDialogComponent
+    PerguntaFormDialogComponent,
+    ConfirmarRemoverDialogComponent,
+    ConfirmarRestauracaoDialogComponent
   ],
   bootstrap: [AppComponent]
 })
