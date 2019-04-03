@@ -10,13 +10,17 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'; // respnsavel 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { LoginComponent, PreJogoComponent } from './components';
+import { LoginComponent,
+         PreJogoComponent,
+         AdminComponent,
+         PerguntaFormDialogComponent } from './components';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatInputModule,
   MatButtonModule,
   MatListModule,
   MatSnackBarModule,
+  MatTableModule,
   MatPaginatorModule,
   MatDialogModule,
   MatSelectModule,
@@ -26,11 +30,14 @@ import {
 } from '@angular/material';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PreJogoComponent
+    PreJogoComponent,
+    AdminComponent,
+    PerguntaFormDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -43,14 +50,19 @@ import {
     MatButtonModule,
     MatListModule,
     MatSnackBarModule,
+    MatTableModule,
     MatPaginatorModule,
     MatDialogModule,
     MatSelectModule,
     MatIconModule,
     MatTooltipModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    ReactiveFormsModule
   ],
   providers: [],
+  entryComponents: [
+    PerguntaFormDialogComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
