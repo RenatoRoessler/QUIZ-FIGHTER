@@ -15,7 +15,9 @@ import { LoginComponent,
          AdminComponent,
          PerguntaFormDialogComponent,
          ConfirmarRemoverDialogComponent,
-         ConfirmarRestauracaoDialogComponent } from './components';
+         ConfirmarRestauracaoDialogComponent,
+         JogosFormDialogComponent,
+         JogoComponent } from './components';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   MatInputModule,
@@ -32,8 +34,6 @@ import {
 } from '@angular/material';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +42,9 @@ import {
     AdminComponent,
     PerguntaFormDialogComponent,
     ConfirmarRemoverDialogComponent,
-    ConfirmarRestauracaoDialogComponent
+    ConfirmarRestauracaoDialogComponent,
+    JogosFormDialogComponent,
+    JogoComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import {
   entryComponents: [
     PerguntaFormDialogComponent,
     ConfirmarRemoverDialogComponent,
-    ConfirmarRestauracaoDialogComponent
+    ConfirmarRestauracaoDialogComponent,
+    JogosFormDialogComponent
   ],
   bootstrap: [AppComponent]
 })

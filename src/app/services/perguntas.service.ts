@@ -97,7 +97,7 @@ export class PerguntasService {
          questao: perguntas[i].questao,
          opcoes: perguntas[i].opcoes,
          correta: perguntas[i].correta
-       }
+       };
        this.perguntasCollection.add(pergunta);
      }
      this.snackBar.open('Dados restaurados com sucesso',

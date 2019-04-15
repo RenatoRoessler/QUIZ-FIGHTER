@@ -1,7 +1,7 @@
 import { Pergunta, DadosJogador } from './';
 
 export interface Jogo {
-    qtdJoadores: number;
+    qtdJogadores: number;
     vezJogar?: number;
     placar?: {
       jogador1: { acertos: number },
@@ -11,7 +11,7 @@ export interface Jogo {
     questaoNum?: number;
     questaoSel?: number;
     questaoCorreta?: boolean;
-    questaoAtualizacao?: number;
+    dataAtualizacao?: number;
     jogador1?: DadosJogador;
     jogador2?: DadosJogador;
     id?: string;
